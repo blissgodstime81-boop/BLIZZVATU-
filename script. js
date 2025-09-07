@@ -1,0 +1,22 @@
+// Example: Show a welcome message when the page loads
+window.onload = function() {
+  alert("Welcome to BLIZZVATU! Empower your wealth journey.");
+};
+
+// Example: Simple form validation (for future registration page)
+function validateForm() {
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  if (name === "" || email === "") {
+    alert("Please fill in all fields.");
+    return false;
+  }
+  return true;
+}
+
+// Example: Redirect to WhatsApp (for future integration)
+function goToWhatsApp() {
+  var phoneNumber = "2348012345678"; // Replace with your WhatsApp contact
+  var message = encodeURIComponent("Hello, I want more info about BLIZZVATU!");
+  window.location.href = `https://wa.me/${phoneNumber}?text=${message}`;
+}
